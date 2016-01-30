@@ -28,3 +28,33 @@ ThinkPHP 支持 Composer 安装部署:
     ├─Application     应用目录
     ├─Public          资源文件目录
     └─ThinkPHP        框架目录
+
+## 入口文件
+
+是 ThinkPHP 预载前的一些定义部署，我一般是一个 Module 一个入口文件，为入口减压，官方网站上该章节的唯一亮点是:
+
+> 给THINK_PATH和APP_PATH定义绝对路径会提高系统的加载效率。
+
+## 自动生成
+
+这个是我喜欢 ThinkPHP 的一个地方，虽然没有 Leveral 那种提供命令行的创建方式，通过 define 来创建相应的文件目录也是不错，特别是在共享主机的环境下。
+
+    // 自动生成安全目录保护文件 default.html
+    define('DIR_SECURE_FILENAME', 'default.html'); 
+    
+    // 绑定模块，并自动生成相应的控制器文件
+    define('BIND_MODULE','Admin');
+    define('BUILD_CONTROLLER_LIST','Index,User,Menu'); 
+    
+    define('APP_PATH','./Application/');
+    require './ThinkPHP/ThinkPHP.php';
+
+## 控制器
+### 必须
+控制器首字母必须大写
+### 可以 
+- 可以保护数字
+- 文件内的 Class 命名可以不匹配字母大小，只要字母对应上就行(eg. /index.php/Home/Camel, /index.php/Home/Camel2)
+
+### 不可以 
+后面的字母都不可以大写 (eg. /index.php/Home/Camel)
