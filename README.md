@@ -2,6 +2,8 @@
 本项目是 ThinkPHP 3.2.x 的研究案例练习，你可以下载本项目中的代码来了解 ThinkPHP 3.2.x 
 中的所有功能。
 
+GitHub: https://github.com/dotku/thinkphp-study
+
 ## 获取 ThinkPHP
 ThinkPHP 支持 Composer 安装部署:
 
