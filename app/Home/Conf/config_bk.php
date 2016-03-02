@@ -1,5 +1,4 @@
 <?php
-define('__PUBLIC__', '123');
 return array(
     // Database
     'DB_TYPE'   => 'mysql', // 数据库类型
@@ -9,6 +8,4 @@ return array(
     'DB_PWD'    => 'admin123', // 密码
     'DB_PORT'   => 3306, // 端口
     
-    // ThinkPHP
-    'TMPL_ENGINE_TYPE'      => 'PHP',
 );

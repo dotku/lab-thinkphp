@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <h1>TITLE</h1>
-      <p>content</p>
+      <p>/lab-server/thinkphp/thinkphp-study/Public</p>
     </div>
     <script>
       

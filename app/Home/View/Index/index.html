@@ -14,8 +14,14 @@
   </head>
   <body>
     <div class="container">
-      <h1>TITLE</h1>
-      <p>content</p>
+      <h1>ThinkPHP Study</h1>
+      <h2>关闭 AppDEBUG 之后，Define 失效</h2>
+      <h3>问题</h3>
+      <p>Define 位于 /App/Common/common/config.php 文件位置，在 Debug 模式开启下正常，Debug 模式关闭后时效</p>
+      <p><?php echo __PUBLIC__; ?></p>
+      <h3>解决方案</h3>
+      <p>在 index.php 文件中进行 define 操作</p>
+      <p><?php echo __PUBLIC_DEFINE__; ?></p>
     </div>
     <script>
       
